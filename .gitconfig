@@ -1,0 +1,18 @@
+[pull]
+	rebase = true
+[user]
+	name = Alankrith Krishnan
+[alias]
+	p = pull
+	s = status -sb
+	ll = log --oneline
+	last = log -1 HEAD --stat
+	cm = commit -m
+	co = checkout
+	cob = checkout -b
+	del = branch -D
+	undo = reset HEAD~1 --mixed
+	br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+	res = !git reset --hard
+[init]
+	defaultBranch = main
